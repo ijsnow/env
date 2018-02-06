@@ -1,0 +1,10 @@
+# Vim stuff
+nvim/repos/*
+nvim/.cache
+nvim/.undodir
+.netrwhist
+cache_nvim
+state_nvim.vim
+
+# tmux stuff
+tmux/plugins/*
