@@ -22,7 +22,7 @@ set history=1000       " Store a lot of :cmdline history
 set showcmd       " Show incomplete cmds at bottom
 
 set background=dark
-colorscheme base16-default-dark
+colorscheme base16-classic-dark
 
 " Tab/indent settings
 set autoindent
