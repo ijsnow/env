@@ -1,6 +1,11 @@
 # Set a Ctrl-b shortcut for reloading your tmux config
 bind r source-file ~/.tmux.conf
 
+# remap prefix from 'C-b' to 'C-a'
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
 # Prefix + C creates window and prompts for name
 bind-key C command-prompt -p "Name of new window: " "new-window -n '%%'"
 

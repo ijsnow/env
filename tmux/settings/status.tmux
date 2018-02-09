@@ -1,9 +1,16 @@
-#+----------------+
-#+ Plugin Support +
-#+----------------+
+# Color defs
+#
+BLUE="#1C77C3"
+BLUE_LIGHT=$BLUE
+# BLUE_LIGHT="#06aed5"
+YELLOW="#f0c808"
+WHITE="#fff1d0"
+RED="#dd1c1a"
+
+
 #+--- tmux-prefix-highlight ---+
 set -g @prefix_highlight_fg black
-set -g @prefix_highlight_bg brightcyan
+set -g @prefix_highlight_bg $BLUE_LIGHT
 
 #+---------+
 #+ Options +
@@ -28,44 +35,35 @@ set -g status-attr none
 set -g pane-border-bg black
 set -g pane-border-fg black
 set -g pane-active-border-bg black
-set -g pane-active-border-fg brightblack
+set -g pane-active-border-fg $BLUE_LIGHT
 set -g display-panes-colour black
 set -g display-panes-active-colour brightblack
 
 #+------------+
 #+ Clock Mode +
 #+------------+
-setw -g clock-mode-colour cyan
+setw -g clock-mode-colour $BLUE_LIGHT
 
 #+----------+
 #+ Messages +
 #+---------+
-set -g message-fg cyan
-set -g message-bg brightblack
-set -g message-command-fg cyan
-set -g message-command-bg brightblack
+set -g message-fg $BLUE_LIGHT
+set -g message-bg black
+set -g message-command-fg $BLUE_LIGHT
+set -g message-command-bg black
 
-#+----------------+
-#+ Plugin Support +
-#+----------------+
 #+--- tmux-prefix-highlight ---+
-set -g @prefix_highlight_output_prefix "#[fg=brightcyan]#[bg=black]#[nobold]#[noitalics]#[nounderscore]#[bg=brightcyan]#[fg=black]"
+set -g @prefix_highlight_output_prefix "#[fg=$BLUE]#[bg=black]#[nobold]#[noitalics]#[nounderscore]#[bg=$BLUE_LIGHT]#[fg=black]"
 set -g @prefix_highlight_output_suffix ""
-set -g @prefix_highlight_copy_mode_attr "fg=brightcyan,bg=black,bold"
+set -g @prefix_highlight_copy_mode_attr "fg=$BLUE_LIGHT,bg=black,bold"
 
 #+--------+
 #+ Status +
 #+--------+
-set -g status-left "#[fg=black,bg=blue,bold] #S #[fg=blue,bg=black,nobold,noitalics,nounderscore]"
-set -g status-right "#{prefix_highlight}#[fg=brightblack,bg=black,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] %m/%d/%y #[fg=white,bg=brightblack,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] %H:%M #[fg=cyan,bg=brightblack,nobold,noitalics,nounderscore]#[fg=black,bg=cyan,bold] #H "
+set -g status-left "#[fg=$WHITE,bg=$RED,bold] #S #[fg=$RED,bg=black,nobold,noitalics,nounderscore]"
+set -g status-right "#{prefix_highlight}#[fg=$BLUE,bg=black,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$BLUE] %m/%d/%y #[fg=$WHITE,bg=$BLUE,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$BLUE] %H:%M #[fg=$RED,bg=$BLUE,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$RED,bold] #H "
 
 #+--- Windows ---+
-set -g window-status-format "#[fg=black,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#I #[fg=white,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#W #F #[fg=brightblack,bg=black,nobold,noitalics,nounderscore]"
-set -g window-status-current-format "#[fg=black,bg=cyan,nobold,noitalics,nounderscore] #[fg=black,bg=cyan]#I #[fg=black,bg=cyan,nobold,noitalics,nounderscore] #[fg=black,bg=cyan]#W #F #[fg=cyan,bg=black,nobold,noitalics,nounderscore]"
+set -g window-status-format "#[fg=black,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#I #[fg=$WHITE,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#W #F #[fg=$BLUE_LIGHT,bg=black,nobold,noitalics,nounderscore]"
+set -g window-status-current-format "#[fg=black,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#I #[fg=$WHITE,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#W #F #[fg=$RED,bg=black,nobold,noitalics,nounderscore]"
 set -g window-status-separator ""
-
-# IDEAS
-#   Make active window red
-#   make grey something that stands out more
-#   no cyan - strong blue
-#   make color of pane divider stick out more
