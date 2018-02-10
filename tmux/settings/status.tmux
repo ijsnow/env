@@ -64,6 +64,6 @@ set -g status-left "#[fg=$WHITE,bg=$RED,bold] #S #[fg=$RED,bg=black,nobold,noita
 set -g status-right "#{prefix_highlight}#[fg=$BLUE,bg=black,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$BLUE] %m/%d/%y #[fg=$WHITE,bg=$BLUE,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$BLUE] %H:%M #[fg=$RED,bg=$BLUE,nobold,noitalics,nounderscore]#[fg=$WHITE,bg=$RED,bold] #H "
 
 #+--- Windows ---+
-set -g window-status-format "#[fg=black,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#I #[fg=$WHITE,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#W #F #[fg=$BLUE_LIGHT,bg=black,nobold,noitalics,nounderscore]"
-set -g window-status-current-format "#[fg=black,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#I #[fg=$WHITE,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#W #F #[fg=$RED,bg=black,nobold,noitalics,nounderscore]"
+set -g window-status-format "#[fg=black,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#I #[fg=$WHITE,bg=$BLUE_LIGHT,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$BLUE_LIGHT]#W #[fg=$BLUE_LIGHT,bg=black,nobold,noitalics,nounderscore]"
+set -g window-status-current-format "#[fg=black,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#I #[fg=$WHITE,bg=$RED,nobold,noitalics,nounderscore] #[fg=$WHITE,bg=$RED]#W #[fg=$RED,bg=black,nobold,noitalics,nounderscore]"
 set -g window-status-separator ""
