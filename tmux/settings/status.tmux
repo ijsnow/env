@@ -33,7 +33,7 @@ set -g status-attr none
 #+ Panes +
 #+-------+
 set -g pane-border-bg black
-set -g pane-border-fg black
+set -g pane-border-fg $WHITE
 set -g pane-active-border-bg black
 set -g pane-active-border-fg $BLUE_LIGHT
 set -g display-panes-colour black
