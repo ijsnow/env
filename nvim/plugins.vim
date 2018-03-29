@@ -17,6 +17,7 @@ call dein#add('$ENVDIR/nvim/repos/github.com/Shougo/dein.vim')
 call dein#add('autozimu/LanguageClient-neovim', { 'hook_post_update': ':UpdateRemotePlugins' })
 call dein#add('junegunn/fzf')
 call dein#add('christoomey/vim-tmux-navigator')
+call dein#add('easymotion/vim-easymotion')
 call dein#add('tpope/vim-eunuch')
 call dein#add('tmux-plugins/vim-tmux')
 
@@ -44,7 +45,11 @@ call dein#add('mbbill/undotree')
 call dein#add('tpope/vim-fugitive')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+
+" Errors/lint
 call dein#add('neomake/neomake')
+" call dein#add('w0rp/ale')
+
 call dein#add('mileszs/ack.vim')
 call dein#add('severin-lemaignan/vim-minimap')
 call dein#add('nathanaelkane/vim-indent-guides')

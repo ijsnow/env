@@ -21,4 +21,4 @@ set-window-option -g mode-keys vi
 # Open new panes in same directory as current pane
 bind '"' split-window -c '#{pane_current_path}'
 bind % split-window -h -c '#{pane_current_path}'
-bind c split-window -c '#{pane_current_path}'
+bind c new-window -c '#{pane_current_path}'

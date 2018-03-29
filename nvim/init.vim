@@ -10,8 +10,10 @@ source $ENVDIR/nvim/settings/config.vim
 " Plugin Settings
 source $ENVDIR/nvim/settings/deoplete.vim
 source $ENVDIR/nvim/settings/neomake.vim
+" source $ENVDIR/nvim/settings/ale.vim
 source $ENVDIR/nvim/settings/ctrlp.vim
 source $ENVDIR/nvim/settings/nerdcommenter.vim
+source $ENVDIR/nvim/settings/nerdtree.vim
 source $ENVDIR/nvim/settings/ack.vim
 source $ENVDIR/nvim/settings/airline.vim
 source $ENVDIR/nvim/settings/vim-minimap.vim

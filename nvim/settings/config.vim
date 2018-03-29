@@ -38,8 +38,13 @@ set ignorecase		" Searching isn't case sensitive
 set smartcase		" But when search contains uppercase it is case sensitive :)
 set incsearch		" Highlight search results while typing
 set hlsearch		" Highlight search results
+
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <leader-l> :nohl<CR><C-l>
+
+" Vim splits to the right and below
+set splitbelow
+set splitright
 
 " :W should behave like :w
 cnoreabbrev W w
@@ -109,3 +114,5 @@ endif
 
 " Italic comments
 highlight Comment cterm=italic
+
+autocmd BufNewFile,BufRead *rc   set syntax=json
