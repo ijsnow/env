@@ -14,7 +14,7 @@ call dein#begin('$ENVDIR/nvim')
 call dein#add('$ENVDIR/nvim/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here:
-call dein#add('autozimu/LanguageClient-neovim', { 'hook_post_update': ':UpdateRemotePlugins' })
+call dein#add('autozimu/LanguageClient-neovim', { 'rev': 'next', 'build': 'bash install.sh' })
 call dein#add('junegunn/fzf')
 call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('easymotion/vim-easymotion')

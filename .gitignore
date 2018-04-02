@@ -1,3 +1,5 @@
+.tmp
+
 # Vim stuff
 nvim/repos/*
 nvim/.cache

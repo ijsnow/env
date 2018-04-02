@@ -1,5 +1,12 @@
 # env
 
+## Setup (wip)
+
+```bash
+# From within env
+./setup.sh
+```
+
 ## Bash
 
 ```bash
