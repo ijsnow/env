@@ -13,10 +13,11 @@ let g:go_highlight_types = 1
 let g:go_auto_sameids = 1
 
 autocmd FileType go nmap <leader>gb :GoBuild<CR>
-autocmd FileType go nmap <leader>gr :GoRun<CR>
+autocmd FileType go nmap <leader>gg :GoRun<CR>
 autocmd FileType go nmap <leader>gt :GoTest<CR>
 autocmd FileType go nmap <leader>gc :GoCoverageToggle<CR>
 autocmd FileType go nmap <leader>gd :GoDef<CR>
+autocmd FileType go nmap <leader>gr :GoReferrers<CR>
 autocmd FileType go nmap <leader>gf :GoDoc<CR>
 autocmd FileType go nmap <leader>gi :GoImports<CR>
 autocmd FileType go nmap <leader>gn :GoImpl<CR>

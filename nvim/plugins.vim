@@ -15,7 +15,8 @@ call dein#add('$ENVDIR/nvim/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here:
 call dein#add('autozimu/LanguageClient-neovim', { 'rev': 'next', 'build': 'bash install.sh' })
-call dein#add('junegunn/fzf')
+call dein#add('roxma/LanguageServer-php-neovim', { 'build': 'composer install && composer run-script parse-stubs' })
+
 call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('easymotion/vim-easymotion')
 call dein#add('tpope/vim-eunuch')
@@ -29,10 +30,20 @@ call dein#add('roxma/nvim-completion-manager')
 call dein#add('fatih/vim-go')
 call dein#add('jodosha/vim-godebug')
 call dein#add('pangloss/vim-javascript')
+call dein#add('mxw/vim-jsx')
+call dein#add('peitalin/vim-jsx-typescript')
 call dein#add('AndrewRadev/splitjoin.vim')
 " call dein#add('SirVer/ultisnips')
 call dein#add('scrooloose/nerdtree')
-call dein#add('ctrlpvim/ctrlp.vim')
+" call dein#add('luochen1990/rainbow')
+
+""" File system traversing
+call dein#add('junegunn/fzf', { 'build': './install --all' })
+call dein#add('junegunn/fzf.vim')
+" call dein#add('ctrlpvim/ctrlp.vim')
+call dein#add('sjbach/lusty')
+"""
+
 call dein#add('scrooloose/nerdcommenter')
 call dein#add('flazz/vim-colorschemes')
 call dein#add('airblade/vim-gitgutter')
@@ -46,6 +57,8 @@ call dein#add('tpope/vim-fugitive')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 
+call dein#add('editorconfig/editorconfig-vim')
+
 " Errors/lint
 call dein#add('neomake/neomake')
 " call dein#add('w0rp/ale')
@@ -53,7 +66,6 @@ call dein#add('neomake/neomake')
 call dein#add('mileszs/ack.vim')
 call dein#add('severin-lemaignan/vim-minimap')
 call dein#add('nathanaelkane/vim-indent-guides')
-call dein#add('sjbach/lusty')
 
 " Themes
 call dein#add('jacoborus/tender.vim')

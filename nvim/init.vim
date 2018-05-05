@@ -11,7 +11,11 @@ source $ENVDIR/nvim/settings/config.vim
 source $ENVDIR/nvim/settings/deoplete.vim
 source $ENVDIR/nvim/settings/neomake.vim
 " source $ENVDIR/nvim/settings/ale.vim
-source $ENVDIR/nvim/settings/ctrlp.vim
+
+" Use one or the other of the following
+source $ENVDIR/nvim/settings/fzf.vim
+" source $ENVDIR/nvim/settings/ctrlp.vim
+
 source $ENVDIR/nvim/settings/nerdcommenter.vim
 source $ENVDIR/nvim/settings/nerdtree.vim
 source $ENVDIR/nvim/settings/ack.vim
@@ -27,3 +31,4 @@ source $ENVDIR/nvim/settings/vim-prettier.vim
 source $ENVDIR/nvim/settings/nvim-completion-manager.vim
 source $ENVDIR/nvim/settings/vim-fugitive.vim
 source $ENVDIR/nvim/settings/sourcegraph.vim
+source $ENVDIR/nvim/settings/rainbow.vim

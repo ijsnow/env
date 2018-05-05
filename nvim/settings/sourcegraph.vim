@@ -1,4 +1,4 @@
-nmap <leader>sge :silent !src-insiders %<CR>
+nmap <leader>o :silent !code %<CR>
 nmap <leader>sg :execute join(["silent !sg ", "--pos=", "L", line('.'), ":", col('.'), " %"], "")<CR>
 
 function! SGSearch(term)

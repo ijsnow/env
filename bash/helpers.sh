@@ -7,10 +7,9 @@ function mkcd () {
 
 function wip() {
   git add .
-  echo "$*"
-  git commit -m "wip $*"
+  git commit -m "wip - $*"
 }
 
 alias squish='git status && git commit -a --amend -C HEAD'
-alias wip='git commit -am WIP'
+# alias wip='git commit -am WIP'
 alias rbp='source ~/.bash_profile'

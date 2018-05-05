@@ -15,7 +15,12 @@ set title 		" Update title of terminal window
 set number		" Show line numbers
 set ruler		" Display cursor position
 set wrap		" Wrap lines when too long
-set list listchars=tab:··,trail:·,nbsp:·,eol:¬
+
+" Adds new line chars
+" set list listchars=tab:  ,trail:·,nbsp:·,eol:¬
+" Same as a bove but add dots for leading spaces/tabs
+" set list listchars=tab:··,trail:·,nbsp:·,eol:¬
+
 set colorcolumn=80                            " Show max char length
 set showmode      " Show current mode at bottom
 set history=1000       " Store a lot of :cmdline history
