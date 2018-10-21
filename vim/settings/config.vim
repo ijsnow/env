@@ -47,6 +47,9 @@ set smartcase		" But when search contains uppercase it is case sensitive :)
 set incsearch		" Highlight search results while typing
 set hlsearch		" Highlight search results
 
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <leader-l> :nohl<CR><C-l>
+
 " Vim splits to the right and below
 set splitbelow
 set splitright
@@ -74,9 +77,9 @@ let g:jsx_ext_required = 0
 let mapleader = ","
 let maplocalleader = ","
 
-" <Esc> key is ctrl+space
-nnoremap <C-Space> <Esc>
-inoremap <C-Space> <Esc>
+" <Esc> key is jk-space
+imap kj<Space> <Esc>
+inoremap kj<Space> <Esc>
 
 " Fonts
 set guifont="Source Code Pro for Powerline:h13"
@@ -120,9 +123,4 @@ endif
 " Italic comments
 highlight Comment cterm=italic
 
-augroup filetype_typescript
-    autocmd!
-    autocmd BufEnter,BufNewFile,BufRead,BufReadPost *.ts,*.tsx setlocal filetype=typescript
-augroup END
-
-autocmd BufEnter,BufNewFile,BufRead *rc   set syntax=json
+autocmd BufNewFile,BufRead *rc   set syntax=json

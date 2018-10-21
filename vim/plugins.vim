@@ -14,37 +14,37 @@ call dein#begin('$ENVDIR/nvim')
 call dein#add('$ENVDIR/nvim/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here:
-
 call dein#add('autozimu/LanguageClient-neovim', { 'rev': 'next', 'build': 'bash install.sh' })
-
-call dein#add('Shougo/deoplete.nvim', { 'build': 'bash install.sh' })
-
-" call dein#add('roxma/LanguageServer-php-neovim', { 'build': 'composer install && composer run-script parse-stubs' })
-" call dein#add('Shougo/vimproc.vim', { 'build' : 'make -f make_mac.mak' })
-"
-" call dein#add('Shougo/neosnippet.vim')
-" call dein#add('Shougo/neosnippet-snippets')
+call dein#add('roxma/LanguageServer-php-neovim', { 'build': 'composer install && composer run-script parse-stubs' })
+call dein#add('Shougo/vimproc.vim', { 'build' : 'make -f make_mac.mak' })
 
 call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('easymotion/vim-easymotion')
 call dein#add('tpope/vim-eunuch')
 call dein#add('tmux-plugins/vim-tmux')
 
+call dein#add('joshdick/onedark.vim')
+call dein#add('tomasiser/vim-code-dark')
 call dein#add('Dru89/vim-adventurous')
+call dein#add('kadekillary/Turtles')
+call dein#add('NewProggie/NewProggie-Color-Scheme')
+call dein#add('Heorhiy/VisualStudioDark.vim')
+call dein#add('Alvarocz/vim-northpole')
 call dein#add('kien/rainbow_parentheses.vim')
 
-" call dein#add('roxma/nvim-completion-manager')
+call dein#add('Shougo/deoplete.nvim')
+call dein#add('Shougo/neosnippet.vim')
+call dein#add('Shougo/neosnippet-snippets')
+call dein#add('roxma/nvim-completion-manager')
 
 call dein#add('fatih/vim-go')
 call dein#add('jodosha/vim-godebug')
 call dein#add('pangloss/vim-javascript')
 call dein#add('mxw/vim-jsx')
 
-" call dein#add('leafgarland/typescript-vim')
-call dein#add('HerringtonDarkholme/yats.vim')
+call dein#add('leafgarland/typescript-vim')
 call dein#add('peitalin/vim-jsx-typescript')
-" call dein#add('Quramy/tsuquyomi')
-" call dein#add('mhartington/nvim-typescript', { 'build': './install.sh' })
+call dein#add('Quramy/tsuquyomi')
 
 call dein#add('AndrewRadev/splitjoin.vim')
 call dein#add('scrooloose/nerdtree')
@@ -77,24 +77,22 @@ call dein#add('nathanaelkane/vim-indent-guides')
 
 " Themes
 call dein#add('jacoborus/tender.vim')
+call dein#add('trusktr/seti.vim')
+call dein#add('chriskempson/base16-vim')
 
 call dein#add('alvan/vim-closetag')
 call dein#add('ap/vim-css-color')
 call dein#add('hail2u/vim-css3-syntax')
 call dein#add('jparise/vim-graphql')
 
-" call dein#add('roxma/nvim-cm-tern')
-" call dein#add('calebeby/ncm-css')
+call dein#add('roxma/nvim-cm-tern')
+call dein#add('calebeby/ncm-css')
 
-" call dein#add('roxma/nvim-cm-tern')
-" call dein#add('roxma/ncm-flow')
-
+call dein#add('roxma/nvim-cm-tern')
+call dein#add('roxma/ncm-flow')
 call dein#add('othree/csscomplete.vim')
 call dein#add('wakatime/vim-wakatime')
-
 call dein#add('prettier/vim-prettier', { 'build': 'yarn install' })
-" call dein#add('sbdchd/neoformat')
-
 call dein#add('tpope/vim-sleuth')
 
 " Required:

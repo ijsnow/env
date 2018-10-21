@@ -8,7 +8,6 @@ source $ENVDIR/nvim/plugins.vim
 source $ENVDIR/nvim/settings/config.vim
 
 " Plugin Settings
-source $ENVDIR/nvim/settings/LanguageClient-neovim.vim
 source $ENVDIR/nvim/settings/deoplete.vim
 source $ENVDIR/nvim/settings/neomake.vim
 " source $ENVDIR/nvim/settings/ale.vim
@@ -29,9 +28,9 @@ source $ENVDIR/nvim/settings/tender.vim
 source $ENVDIR/nvim/settings/vim-closetag.vim
 " source $ENVDIR/nvim/settings/nvim-typescript.vim
 source $ENVDIR/nvim/settings/vim-prettier.vim
-" source $ENVDIR/nvim/settings/neoformat.vim
-" source $ENVDIR/nvim/settings/nvim-completion-manager.vim
+source $ENVDIR/nvim/settings/nvim-completion-manager.vim
 source $ENVDIR/nvim/settings/vim-fugitive.vim
 source $ENVDIR/nvim/settings/sourcegraph.vim
+source $ENVDIR/nvim/settings/vim-jsx-typescript.vim
 source $ENVDIR/nvim/settings/rainbow_parentheses.vim
-" source $ENVDIR/nvim/settings/tsuquyomi.vim
+source $ENVDIR/nvim/settings/tsuquyomi.vim

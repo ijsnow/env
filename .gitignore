@@ -7,6 +7,10 @@ nvim/.undodir
 .netrwhist
 cache_nvim
 state_nvim.vim
+vim/repos/*
+vim/.cache
+vim/state_nvim.vim
+vim/cache_nvim
 
 # tmux stuff
 tmux/plugins/*
