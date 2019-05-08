@@ -14,3 +14,6 @@ vim/cache_nvim
 
 # tmux stuff
 tmux/plugins/*
+
+# zsh
+zsh/antigen.zsh
