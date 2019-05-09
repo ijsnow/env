@@ -11,9 +11,13 @@ vim/repos/*
 vim/.cache
 vim/state_nvim.vim
 vim/cache_nvim
+vim/.plugins/*
 
 # tmux stuff
 tmux/plugins/*
 
 # zsh
 zsh/antigen.zsh
+
+# asdf
+.asdf/

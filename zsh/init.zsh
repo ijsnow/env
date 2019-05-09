@@ -118,3 +118,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+. $ENVDIR/.asdf/asdf.sh
+
+. $ENVDIR/.asdf/completions/asdf.bash
