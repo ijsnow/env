@@ -1,37 +1,74 @@
-# env
+# My environment
 
-## Setup (wip)
+## Setup
 
-```bash
-# From within env
-./setup.sh
+1. Export `ENVDIR`
+
+```shell
+echo "export ENVDIR=$(pwd)" >> ~/.bash_profile
+source ~/.bash_profile
 ```
 
-## Bash
+2. ZSH setup
 
-```bash
-# .bash_profile (or .zshrc)
+```shell
+# install zsh
+brew install zsh zsh-completions
+chsh -s /bin/zsh
 
-export ENVDIR=~/ws/src/github.com/ijsnow/env
-source $ENVDIR/bash/init.sh
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# install antigen
+curl -L git.io/antigen > ./zsh/antigen.zsh
+
+# use custom .zshrc
+echo "source $ENVDIR/zsh/init.zsh" > ~/.zshrc
+source ~/.zshrc
 ```
 
-## Neovim
+3. Install required programming languages and tools
 
-```vim
-" .vimrc
+```shell
+# tools
+brew install zlip
+brew install fzf
+brew install ack
+brew install editorconfig
 
-source $ENVDIR/nvim/init.vim
+# install asdf
+git clone https://github.com/asdf-vm/asdf.git $ENVDIR/.asdf --branch v0.7.1
+
+# add to shell
+echo -e '\n. $ENVDIR/.asdf/asdf.sh' >> $ENVDIR/zsh/init.zsh
+echo -e '\n. $ENVDIR/.asdf/completions/asdf.bash' >> $ENVDIR/zsh/init.zsh
+source ~/.zshrc
+
+# install languages
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin-add python https://github.com/danhper/asdf-python.git
+asdf install
+
 ```
 
-## Tmux
+4. Vim setup
 
-```bash
-# .tmux.conf
+```shell
+# install new vim
+brew install vim
 
-source-file $ENVDIR/tmux/init.tmux
+# install vim-plug`
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-# TODOS
+5. Tmux setup
 
-* Method of installing all deps/plugins(such as neovim/tmux) quickly after cloning
+```shell
+brew install tmux
+echo "source-file $ENVDIR/tmux/init.tmux" > ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm $ENVDIR/tmux/plugins/tpm
+tmux
+```
+
+To install tmux plugins, execute `ctl a + I`, then run `tmux source ~/.tmux.conf` to reload.
