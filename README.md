@@ -44,6 +44,9 @@ echo -e '\n. $ENVDIR/.asdf/asdf.sh' >> $ENVDIR/zsh/init.zsh
 echo -e '\n. $ENVDIR/.asdf/completions/asdf.bash' >> $ENVDIR/zsh/init.zsh
 source ~/.zshrc
 
+# create symlink for global tool versions
+ln -s $ENVDIR/.tool-versions ~/.tool-versions
+
 # install languages
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf plugin-add python https://github.com/danhper/asdf-python.git
