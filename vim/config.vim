@@ -75,6 +75,8 @@ let mapleader = ","
 let maplocalleader = ","
 
 " <Esc> key is ctrl+space
+imap <C-Space> <Esc>
+nmap <C-Space> <Esc>
 nnoremap <C-Space> <Esc>
 inoremap <C-Space> <Esc>
 

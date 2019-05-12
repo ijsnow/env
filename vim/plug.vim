@@ -17,7 +17,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tmux-plugins/vim-tmux'
-Plug 'w0rp/ale'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/vim-js-pretty-template'
+Plug 'w0rp/ale'
 
 call plug#end()
