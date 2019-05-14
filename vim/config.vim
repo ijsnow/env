@@ -128,3 +128,4 @@ augroup filetype_typescript
 augroup END
 
 autocmd BufEnter,BufNewFile,BufRead *rc set syntax=json
+autocmd BufEnter,BufNewFile,BufRead *.tsx set filetype=typescript
