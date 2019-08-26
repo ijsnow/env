@@ -35,6 +35,7 @@ brew install zlip
 brew install fzf
 brew install ack
 brew install editorconfig
+brew install direnv
 
 # install asdf
 git clone https://github.com/asdf-vm/asdf.git $ENVDIR/.asdf --branch v0.7.1
@@ -50,8 +51,9 @@ ln -s $ENVDIR/.tool-versions ~/.tool-versions
 # install languages
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf plugin-add python https://github.com/danhper/asdf-python.git
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf plugin-add java
 asdf install
-
 ```
 
 4. Neovim setup
@@ -67,6 +69,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 # requirements
 gem install neovim
 pip3 install --user pynvim
+
+# for lsp in vim
+npm install -g typescript-language-server
 ```
 
 5. Tmux setup

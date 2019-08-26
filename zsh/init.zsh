@@ -122,6 +122,19 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 #
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-. $ENVDIR/.asdf/asdf.sh
+export GOPATH="$HOME"
+export GO111MODULE=on
 
+eval "$(direnv hook zsh)"
+
+. $ENVDIR/.asdf/asdf.sh
 . $ENVDIR/.asdf/completions/asdf.bash
+. ~/.asdf/plugins/java/asdf-java-wrapper.zsh
+
+export PATH="$(yarn global bin):$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/isaac/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/isaac/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/isaac/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/isaac/google-cloud-sdk/completion.zsh.inc'; fi

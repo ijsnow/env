@@ -1,5 +1,6 @@
 call plug#begin('$ENVDIR/vim/.plugins')
 
+Plug 'vimwiki/vimwiki'
 Plug 'Dru89/vim-adventurous'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -21,5 +22,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'w0rp/ale'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jparise/vim-graphql'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
 call plug#end()

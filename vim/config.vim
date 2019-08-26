@@ -122,10 +122,10 @@ endif
 " Italic comments
 highlight Comment cterm=italic
 
-augroup filetype_typescript
-    autocmd!
-    autocmd BufEnter,BufNewFile,BufRead,BufReadPost *.ts,*.tsx setlocal filetype=typescript
-augroup END
+"augroup filetype_typescript
+    "autocmd!
+    "autocmd BufEnter,BufNewFile,BufRead,BufReadPost *.ts,*.tsx setlocal filetype=typescript
+"augroup END
 
 autocmd BufEnter,BufNewFile,BufRead *rc set syntax=json
-autocmd BufEnter,BufNewFile,BufRead *.tsx set filetype=typescript
+autocmd BufEnter,BufNewFile,BufRead *.tsx set filetype=typescript.tsx

@@ -1,3 +1,5 @@
 ruby 2.5.3
 python 3.6.2 2.7.13
 nodejs 10.15.3
+golang 1.12.5
+java openjdk-11.0.1

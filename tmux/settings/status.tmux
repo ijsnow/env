@@ -31,15 +31,13 @@ set -g status-justify left
 #+--- Colors ---+
 set -g status-bg black
 set -g status-fg white
-set -g status-attr none
+set -g status-style none
 
 #+-------+
 #+ Panes +
 #+-------+
-set -g pane-border-bg black
-set -g pane-border-fg $WHITE
-set -g pane-active-border-bg black
-set -g pane-active-border-fg $BLUE_LIGHT
+set -g pane-border-style bg=black,fg=$WHITE
+set -g pane-active-border-style bg=black,fg=$BLUE_LIGHT
 set -g display-panes-colour black
 set -g display-panes-active-colour brightblack
 
@@ -51,10 +49,8 @@ setw -g clock-mode-colour $BLUE_LIGHT
 #+----------+
 #+ Messages +
 #+---------+
-set -g message-fg $BLUE_LIGHT
-set -g message-bg black
-set -g message-command-fg $BLUE_LIGHT
-set -g message-command-bg black
+set -g message-style fg=$BLUE_LIGHT,bg=black
+set -g message-command-style fg=$BLUE_LIGHT,bg=black
 
 #+--- tmux-prefix-highlight ---+
 set -g @prefix_highlight_output_prefix "#[fg=$BLUE]#[bg=black]#[nobold]#[noitalics]#[nounderscore]#[bg=$BLUE_LIGHT]#[fg=black]"

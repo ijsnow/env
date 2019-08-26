@@ -1,12 +1,14 @@
 let g:ale_fixers = {
-      \   'javascript': ['prettier'],
-      \   'typescript': ['prettier', 'tslint'],
+      \   'javascript': ['eslint'],
+      \   'typescript': ['eslint'],
       \   'css': ['prettier'],
+      \   'scss': ['prettier'],
       \   'json': ['prettier'],
       \}
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
+\}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
-
-nmap <leader>gd :ALEGoToDefinition<CR>
-nmap <leader>fr :ALEFindReferences<CR>
-nmap <leader>h :ALEHover<CR>
+let g:ale_pattern_options = {'\.go$': {'ale_enabled': 0}}
