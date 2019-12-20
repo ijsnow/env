@@ -24,6 +24,10 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jparise/vim-graphql'
+
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

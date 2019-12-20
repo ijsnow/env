@@ -1,6 +1,7 @@
 let g:LanguageClient_serverCommands = {
     \ 'typescript': ['typescript-language-server', '--stdio'],
     \ 'typescript.tsx': ['typescript-language-server', '--stdio'],
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ }
 
 let g:LanguageClient_autoStart = 1

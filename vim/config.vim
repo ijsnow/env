@@ -88,7 +88,7 @@ set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 
 " Strip trailing white spaces on save
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 " Remember last position in file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
@@ -129,3 +129,5 @@ highlight Comment cterm=italic
 
 autocmd BufEnter,BufNewFile,BufRead *rc set syntax=json
 autocmd BufEnter,BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+
+nmap <C-i> <C-a>

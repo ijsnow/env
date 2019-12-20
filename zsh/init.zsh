@@ -138,3 +138,7 @@ if [ -f '/Users/isaac/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/isaac/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/isaac/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/isaac/google-cloud-sdk/completion.zsh.inc'; fi
+
+. /usr/local/etc/profile.d/z.sh
+
+alias t=todo.sh

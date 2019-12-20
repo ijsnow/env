@@ -1,4 +1,6 @@
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+call deoplete#custom#option('omni_patterns', {
+\   'go': '[^. *\t]\.\w*',
+\ })
 let g:go_fmt_command = "goimports"
 
 autocmd FileType go nmap <leader>gd :GoDef<CR>
