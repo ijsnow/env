@@ -11,6 +11,7 @@ export ZSH=/Users/isaac/.oh-my-zsh
 # ZSH_THEME="gitster"
 
 source ~/.bash_profile
+alias f=faas-cli
 
 # antigen stuff
 
@@ -128,7 +129,7 @@ export GO111MODULE=on
 eval "$(direnv hook zsh)"
 
 . $ENVDIR/.asdf/asdf.sh
-. $ENVDIR/.asdf/completions/asdf.bash
+#. $ENVDIR/.asdf/completions/asdf.bash
 . ~/.asdf/plugins/java/asdf-java-wrapper.zsh
 
 export PATH="$(yarn global bin):$PATH"
@@ -142,3 +143,9 @@ if [ -f '/Users/isaac/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/isa
 . /usr/local/etc/profile.d/z.sh
 
 alias t=todo.sh
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
